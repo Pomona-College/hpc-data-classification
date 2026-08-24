@@ -8,7 +8,8 @@ description: 'Learn to classify research data according to Pomona College policy
 branch: 'main'
 life_cycle: 'stable'
 keywords: 'Pomona College, HPC, research computing, data classification, security, research data, FERPA compliance, encryption, access controls'
-source: 'https://github.com/pomona-college-hpc/data-classification'
+source: 'https://github.com/Pomona-College/hpc-data-classification'
+url: 'https://pomona-college.github.io/hpc-data-classification/'
 episodes:
   - 01-why-classification-matters.md
   - 02-regulations-compliance.md

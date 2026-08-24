@@ -142,8 +142,8 @@ You've completed Workshop 14: Data Classification and Handling. You can now:
 
 **Pomona Documents:**
 - [Pomona Information Security Policy](https://www.pomona.edu/its/)
-- [HPC Usage Policy](https://pomona-college-hpc.github.io/usage-policy)
-- [Sagehen User Guide](https://pomona-college-hpc.github.io/sagehen)
+- [HPC Usage Policy](https://pomona-college.github.io/usage-policy)
+- [Sagehen User Guide](https://pomona-college.github.io/sagehen)
 - [Data Classification Guide](https://www.pomona.edu/its/)
 
 **External Standards:**

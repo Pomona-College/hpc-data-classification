@@ -348,7 +348,7 @@ Questions to ask PI/ORSP: ________________________________________
 
 **Pomona Documents:**
 - Information Security Policy: https://www.pomona.edu/its/
-- HPC Usage Policy: https://pomona-college-hpc.github.io/usage-policy
+- HPC Usage Policy: https://pomona-college.github.io/usage-policy
 - Data Classification Guide: https://www.pomona.edu/its/
 
 **Federal Standards:**

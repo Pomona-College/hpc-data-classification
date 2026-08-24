@@ -93,9 +93,9 @@ This workshop ensures your compliance with:
 Before taking this workshop, familiarize yourself with:
 
 - [Pomona Information Security Policy](https://www.pomona.edu/about/policies)
-- [HPC Usage Policy](https://pomona-college-hpc.github.io/usage-policy/)
+- [HPC Usage Policy](https://pomona-college.github.io/usage-policy/)
 - [Data Classification Guide](https://www.pomona.edu/its/)
-- [Sagehen Cluster Documentation](https://pomona-college-hpc.github.io/sagehen/)
+- [Sagehen Cluster Documentation](https://pomona-college.github.io/sagehen/)
 
 ---
 

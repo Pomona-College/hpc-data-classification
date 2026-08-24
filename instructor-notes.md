@@ -607,7 +607,7 @@ Here's what to do next:
 4. QUESTIONS?
    📧 its-hpc@pomona.edu (data classification & encryption)
    📧 orsp@pomona.edu (export control, FERPA, IRB questions)
-   🔗 https://pomona-college-hpc.github.io/sagehen/ (Sagehen docs)
+   🔗 https://pomona-college.github.io/sagehen/ (Sagehen docs)
 
 Your PI may require completion certification before enabling full cluster access.
 
@@ -639,7 +639,7 @@ A:** Not recommended. Audit trail can't distinguish who accessed what. Better: M
 **Internal (Pomona) Resources**
 - ORSP contact: orsp@pomona.edu
 - ITS contact: its-hpc@pomona.edu
-- Sagehen docs: https://pomona-college-hpc.github.io/sagehen/
+- Sagehen docs: https://pomona-college.github.io/sagehen/
 - ISP policy: https://www.pomona.edu/its/
 
 **External Resources**

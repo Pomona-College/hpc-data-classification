@@ -1,9 +1,9 @@
 <!-- Useful links for Workshop 14: Data Classification and Handling -->
 
-[sagehen]: https://pomona-college-hpc.github.io/sagehen/
+[sagehen]: https://pomona-college.github.io/sagehen/
 [its-hpc]: mailto:its-hpc@pomona.edu
 [orsp]: mailto:orsp@pomona.edu
-[hpc-policy]: https://pomona-college-hpc.github.io/usage-policy/
+[hpc-policy]: https://pomona-college.github.io/usage-policy/
 [pomona-isp]: https://www.pomona.edu/its/
 [data-classification-guide]: https://www.pomona.edu/its/
 [nist-800-171]: https://csrc.nist.gov/publications/detail/sp/800-171/rev-2
