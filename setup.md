@@ -199,7 +199,7 @@ Your PI or ITS may require completion certification before you can access Restri
 
 ## Getting Started
 
-Ready to begin? Start with [Episode 01: Why Classify Data?](episodes/01-why-classify-data.md)
+Ready to begin? Start with [Episode 01: Why Classification Matters](episodes/01-why-classification-matters.md)
 
 If you have setup questions before starting, contact its-hpc@pomona.edu with the subject line: **"Workshop 14 Setup Help"**
 
