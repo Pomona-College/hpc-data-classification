@@ -46,6 +46,12 @@
     <loc>https://pomona-college.github.io/hpc-data-classification/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://pomona-college.github.io/hpc-data-classification/aio.html</loc>
+  </url>
+  <url>
+    <loc>https://pomona-college.github.io/hpc-data-classification/images.html</loc>
+  </url>
+  <url>
     <loc>https://pomona-college.github.io/hpc-data-classification/index.html</loc>
   </url>
   <url>
@@ -94,10 +100,19 @@
     <loc>https://pomona-college.github.io/hpc-data-classification/instructor/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://pomona-college.github.io/hpc-data-classification/instructor/aio.html</loc>
+  </url>
+  <url>
+    <loc>https://pomona-college.github.io/hpc-data-classification/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://pomona-college.github.io/hpc-data-classification/instructor/index.html</loc>
   </url>
   <url>
     <loc>https://pomona-college.github.io/hpc-data-classification/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://pomona-college.github.io/hpc-data-classification/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://pomona-college.github.io/hpc-data-classification/instructor/learner-profiles.html</loc>
@@ -113,6 +128,9 @@
   </url>
   <url>
     <loc>https://pomona-college.github.io/hpc-data-classification/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://pomona-college.github.io/hpc-data-classification/key-points.html</loc>
   </url>
   <url>
     <loc>https://pomona-college.github.io/hpc-data-classification/learner-profiles.html</loc>
