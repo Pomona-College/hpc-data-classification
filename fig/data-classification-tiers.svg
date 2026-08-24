@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 420" width="660" height="420" font-family="Arial, Helvetica, sans-serif" role="img">
+  <title>Data Classification Tiers</title>
+  <desc>Three-tier data classification: PUBLIC, PROPRIETARY, RESTRICTED</desc>
+  <defs>
+    <filter id="sh18" x="-3%" y="-3%" width="106%" height="110%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <g filter="url(#sh18)">
+    <rect x="180" y="10" width="300" height="42" rx="8" fill="#004B87" stroke="#003366" stroke-width="2"/>
+    <text x="330" y="37" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold">Data Classification Tiers</text>
+  </g>
+
+  <!-- Connector -->
+  <path d="M 330,52 L 330,70 M 110,70 L 550,70" fill="none" stroke="#003366" stroke-width="1.5"/>
+  <line x1="110" y1="70" x2="110" y2="85" stroke="#003366" stroke-width="1.5"/>
+  <line x1="330" y1="70" x2="330" y2="85" stroke="#003366" stroke-width="1.5"/>
+  <line x1="550" y1="70" x2="550" y2="85" stroke="#003366" stroke-width="1.5"/>
+
+  <!-- PUBLIC Card -->
+  <g filter="url(#sh18)">
+    <rect x="15" y="88" width="200" height="310" rx="8" fill="#f8f9fa" stroke="#28A745" stroke-width="2"/>
+    <rect x="15" y="88" width="200" height="38" rx="8" fill="#28A745" stroke="none"/>
+    <rect x="15" y="110" width="200" height="16" fill="#28A745" stroke="none"/>
+    <text x="115" y="113" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold">PUBLIC</text>
+    <line x1="30" y1="135" x2="200" y2="135" stroke="#28A745" stroke-width="0.8" stroke-opacity="0.4"/>
+    <text x="35" y="160" fill="#333" font-size="12" font-weight="bold">Permissions</text>
+    <text x="35" y="178" fill="#333" font-size="13">755</text>
+    <text x="35" y="208" fill="#333" font-size="12" font-weight="bold">Encryption</text>
+    <text x="35" y="226" fill="#333" font-size="13">Not required</text>
+    <text x="35" y="256" fill="#333" font-size="12" font-weight="bold">Examples</text>
+    <text x="35" y="274" fill="#333" font-size="12">Published research</text>
+    <text x="35" y="292" fill="#333" font-size="12">Course materials</text>
+    <text x="35" y="310" fill="#333" font-size="12">Public datasets</text>
+  </g>
+
+  <!-- PROPRIETARY Card -->
+  <g filter="url(#sh18)">
+    <rect x="230" y="88" width="200" height="310" rx="8" fill="#f8f9fa" stroke="#FD7E14" stroke-width="2"/>
+    <rect x="230" y="88" width="200" height="38" rx="8" fill="#FD7E14" stroke="none"/>
+    <rect x="230" y="110" width="200" height="16" fill="#FD7E14" stroke="none"/>
+    <text x="330" y="113" text-anchor="middle" fill="#000" font-size="16" font-weight="bold">PROPRIETARY</text>
+    <line x1="245" y1="135" x2="415" y2="135" stroke="#FD7E14" stroke-width="0.8" stroke-opacity="0.4"/>
+    <text x="250" y="160" fill="#333" font-size="12" font-weight="bold">Permissions</text>
+    <text x="250" y="178" fill="#333" font-size="13">750</text>
+    <text x="250" y="208" fill="#333" font-size="12" font-weight="bold">Encryption</text>
+    <text x="250" y="226" fill="#333" font-size="13">Recommended</text>
+    <text x="250" y="256" fill="#333" font-size="12" font-weight="bold">Examples</text>
+    <text x="250" y="274" fill="#333" font-size="12">Unpublished research</text>
+    <text x="250" y="292" fill="#333" font-size="12">Intellectual property</text>
+    <text x="250" y="310" fill="#333" font-size="12">Grant proposals</text>
+  </g>
+
+  <!-- RESTRICTED Card -->
+  <g filter="url(#sh18)">
+    <rect x="445" y="88" width="200" height="310" rx="8" fill="#f8f9fa" stroke="#DC3545" stroke-width="2"/>
+    <rect x="445" y="88" width="200" height="38" rx="8" fill="#DC3545" stroke="none"/>
+    <rect x="445" y="110" width="200" height="16" fill="#DC3545" stroke="none"/>
+    <text x="545" y="113" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold">RESTRICTED</text>
+    <line x1="460" y1="135" x2="630" y2="135" stroke="#DC3545" stroke-width="0.8" stroke-opacity="0.3"/>
+    <text x="465" y="160" fill="#333" font-size="12" font-weight="bold">Permissions</text>
+    <text x="465" y="178" fill="#333" font-size="13">700 + ACLs + gocryptfs</text>
+    <text x="465" y="208" fill="#333" font-size="12" font-weight="bold">Encryption</text>
+    <text x="465" y="226" fill="#DC3545" font-size="13" font-weight="bold">Mandatory</text>
+    <text x="465" y="256" fill="#333" font-size="12" font-weight="bold">Examples</text>
+    <text x="465" y="274" fill="#333" font-size="12">FERPA, HIPAA</text>
+    <text x="465" y="292" fill="#333" font-size="12">Export-controlled</text>
+    <text x="465" y="310" fill="#333" font-size="12">CUI, PII</text>
+  </g>
+</svg>
