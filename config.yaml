@@ -1,0 +1,34 @@
+---
+carpentry: 'incubator'
+title: 'Data Classification and Handling — Pomona College HPC Workshop Series'
+created: '2026-03-05'
+license: 'CC-BY 4.0'
+contact: 'its-hpc@pomona.edu'
+description: 'Learn to classify research data according to Pomona College policy, understand handling requirements for each classification tier, and implement proper storage and security controls on the Sagehen HPC cluster.'
+branch: 'main'
+life_cycle: 'stable'
+keywords: 'Pomona College, HPC, research computing, data classification, security, research data, FERPA compliance, encryption, access controls'
+source: 'https://github.com/pomona-college-hpc/data-classification'
+episodes:
+  - 01-why-classification-matters.md
+  - 02-regulations-compliance.md
+  - 03-three-tiers-overview.md
+  - 04-identifying-data-types.md
+  - 05-classification-process.md
+  - 06-decision-framework.md
+  - 07-handling-public-data.md
+  - 08-handling-proprietary-data.md
+  - 09-handling-restricted-data.md
+  - 10-storage-encryption.md
+  - 11-sharing-collaboration.md
+  - 12-deidentification-best-practices.md
+
+learners:
+  - setup.md
+  - reference.md
+
+instructors:
+  - instructor-notes.md
+
+profiles:
+  - learner-profiles.md
