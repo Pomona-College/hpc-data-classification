@@ -232,14 +232,14 @@ Before sharing research data:
 
 | Issue | Contact | Email | Phone |
 |-------|---------|-------|-------|
-| **Sagehen access** | ITS Help Desk | support@pomona.edu | (909) 621-8161 |
+| **Sagehen access** | ITS Help Desk | servicedesk@pomona.edu | (909) 621-8061 |
 | **Data classification** | ITS Research Computing | its-hpc@pomona.edu | N/A |
 | **Encryption/gocryptfs** | ITS Research Computing | its-hpc@pomona.edu | N/A |
 | **Storage quota issues** | ITS Research Computing | its-hpc@pomona.edu | N/A |
 | **Export control questions** | ORSP | orsp@pomona.edu | N/A |
 | **FERPA/IRB questions** | ORSP | orsp@pomona.edu | N/A |
 | **Data breach incident** | ITS Research Computing | its-hpc@pomona.edu | **URGENT** |
-| **General ITS questions** | ITS Service Desk | support@pomona.edu | (909) 621-8161 |
+| **General ITS questions** | ITS Service Desk | servicedesk@pomona.edu | (909) 621-8061 |
 
 ### Useful Commands for Data Classification
 

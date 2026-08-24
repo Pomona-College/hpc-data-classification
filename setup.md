@@ -99,7 +99,7 @@ If any tools are missing, contact ITS at its-hpc@pomona.edu to request installat
 If you encounter technical issues:
 
 1. **Sagehen access problems**
-   - Contact ITS Help Desk: (909) 621-8161 or support@pomona.edu
+   - Contact ITS Help Desk: (909) 621-8061 or servicedesk@pomona.edu
 
 2. **HPC or data classification questions**
    - Email: its-hpc@pomona.edu
