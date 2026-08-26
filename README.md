@@ -54,3 +54,11 @@ For questions about this training:
 This training is part of Pomona College's information security program and compliance with institutional data protection policies.
 
 **Important:** Not completing this training will impact your ability to store certain types of data on Sagehen.
+
+## Acknowledgments
+
+**Andrew Wilson** — Director of Research Computing and Digital Scholarship,
+Pomona College. Workshop design and development.
+
+**Andrei Motchenko** — testing, editing, cleanup and screenshots across the
+Pomona College HPC Workshop Series.

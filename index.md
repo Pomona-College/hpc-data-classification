@@ -102,3 +102,9 @@ Before taking this workshop, familiarize yourself with:
 **Ready to get started?** Begin with [Episode 01: Why Classification Matters](episodes/01-why-classification-matters.md)
 
 **Questions?** Contact Andrew Wilson at its-hpc@pomona.edu or visit ITS during office hours.
+
+## Acknowledgments
+
+Developed by **Andrew Wilson**, Director of Research Computing and Digital
+Scholarship at Pomona College, with **Andrei Motchenko**, who tested, edited
+and produced screenshots for the workshop series.
