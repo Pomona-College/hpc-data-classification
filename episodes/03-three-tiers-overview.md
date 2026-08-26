@@ -37,7 +37,7 @@ Data classification at Pomona College follows a simple principle: **the more sen
 |--------|---------|
 | **Encryption** | Not required |
 | **Access controls** | None required for public; group-readable (750) for internal shared data |
-| **Storage** | Anywhere on Sagehen (`/rhome` or `/bigdata`) |
+| **Storage** | Anywhere on Sagehen HPC (`/rhome` or `/bigdata`) |
 | **Sharing** | Unrestricted (public) or with lab members (shared within groups) |
 | **Retention** | No special policy |
 | **Audit logging** | Not required |
@@ -85,7 +85,7 @@ Even though Public data needs no special protection:
 | **Encryption** | Not required | Recommended | **REQUIRED** (AES-256-GCM) |
 | **Audit logging** | Not required | Optional | **REQUIRED** |
 
-![All three tiers demonstrated: directories and files created and chmod-ed per tier — 755/644 PUBLIC, 750/640 PROPRIETARY, 700/600 RESTRICTED (which additionally requires gocryptfs). Note Sagehen sets the setgid bit on new directories, so your `ls -l` will show an `s` where these examples show plain modes.](fig/03-three-tier-permissions-demo.jpg){alt='A terminal creating three directories and three CSV files, one per classification tier, and applying paired chmod commands: 755 and 644 for public, 750 and 640 for proprietary, 700 and 600 for restricted. The ls -l listing shows the resulting permission strings, with the directories carrying an inherited setgid bit.'}
+![All three tiers demonstrated: directories and files created and chmod-ed per tier — 755/644 PUBLIC, 750/640 PROPRIETARY, 700/600 RESTRICTED (which additionally requires gocryptfs). Note Sagehen HPC sets the setgid bit on new directories, so your `ls -l` will show an `s` where these examples show plain modes.](fig/03-three-tier-permissions-demo.jpg){alt='A terminal creating three directories and three CSV files, one per classification tier, and applying paired chmod commands: 755 and 644 for public, 750 and 640 for proprietary, 700 and 600 for restricted. The ls -l listing shows the resulting permission strings, with the directories carrying an inherited setgid bit.'}
 
 > **Permission variant on PROPRIETARY**: a `600` (user-only) variant may be appropriate
 > for sub-team-only or single-PI files within a PROPRIETARY workflow. It is a *variant*

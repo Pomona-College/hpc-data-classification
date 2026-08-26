@@ -232,7 +232,7 @@ Before sharing research data:
 
 | Issue | Contact | Email | Phone |
 |-------|---------|-------|-------|
-| **Sagehen access** | ITS Help Desk | servicedesk@pomona.edu | (909) 621-8061 |
+| **Sagehen HPC access** | ITS Help Desk | servicedesk@pomona.edu | (909) 621-8061 |
 | **Data classification** | ITS Research Computing | its-hpc@pomona.edu | N/A |
 | **Encryption/gocryptfs** | ITS Research Computing | its-hpc@pomona.edu | N/A |
 | **Storage quota issues** | ITS Research Computing | its-hpc@pomona.edu | N/A |

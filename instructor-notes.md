@@ -639,7 +639,7 @@ A:** Not recommended. Audit trail can't distinguish who accessed what. Better: M
 **Internal (Pomona) Resources**
 - ORSP contact: orsp@pomona.edu
 - ITS contact: its-hpc@pomona.edu
-- Sagehen docs: https://pomona-college.github.io/sagehen/
+- Sagehen HPC docs: https://pomona-college.github.io/sagehen/
 - ISP policy: https://www.pomona.edu/its/
 
 **External Resources**

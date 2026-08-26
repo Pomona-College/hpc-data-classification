@@ -27,7 +27,7 @@ title: 'Reference'
 - Benefits from being widely available
 
 **Storage Requirements:**
-- Can be stored on any system (Sagehen, cloud, public repositories)
+- Can be stored on any system (Sagehen HPC, cloud, public repositories)
 - Encryption: Not required
 - Access control: Not required
 - Backup: Standard backup policies apply

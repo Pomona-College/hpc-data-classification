@@ -48,7 +48,7 @@ Research is collaborative. You need to share data with PhD students at other uni
 ```
 
 **Sharing methods for data shared within groups:**
-1. Sagehen direct access (collaborators get accounts)
+1. Sagehen HPC direct access (collaborators get accounts)
 2. Pomona-managed Box or OneDrive
 3. Secure SFTP transfer via ITS
 4. GitHub or public repository (if fully public)

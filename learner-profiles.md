@@ -18,7 +18,7 @@ These profiles represent the diverse audience for this workshop. Understanding t
 ### Current Situation
 - Just started in Dr. Smith's lab
 - Working with genomics data from an ongoing study involving human participants
-- Accessing Sagehen for the first time
+- Accessing Sagehen HPC for the first time
 - Unsure of what data handling expectations are
 
 ### What Maria Brings
@@ -53,7 +53,7 @@ These profiles represent the diverse audience for this workshop. Understanding t
 **Experience:** Expert researcher; limited HPC exposure
 
 ### Current Situation
-- Lab is transitioning research to Sagehen cluster
+- Lab is transitioning research to Sagehen HPC cluster
 - Lab traditionally used local workstations; now scaling up
 - Responsible for ensuring lab compliance with institutional policy
 - Has mixed team: postdocs, grad students, undergraduates

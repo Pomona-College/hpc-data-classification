@@ -154,7 +154,7 @@ Your PI or ITS may require completion certification before you can access Restri
 
 ## Troubleshooting Setup
 
-### Can't SSH to Sagehen
+### Can't SSH to Sagehen HPC
 
 **Error:** "Connection refused" or "No such host"
 

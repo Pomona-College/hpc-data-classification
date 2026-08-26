@@ -7,7 +7,7 @@ This workshop teaches Pomona College's three-tier data classification system and
 ## Key Information
 
 - **Duration:** Approximately 6 hours (typically 2 sessions)
-- **Requirement:** Mandatory for all users storing data on Sagehen
+- **Requirement:** Mandatory for all users storing data on Sagehen HPC
 - **Format:** Carpentries Workbench with hands-on exercises
 - **Contact:** its-hpc@pomona.edu
 

@@ -6,7 +6,7 @@ exercises: 15
 
 ::::::::::::::::::::::::::::::::::::: objectives
 - Understand the specific handling requirements for PROPRIETARY data
-- Implement access controls for Proprietary data on Sagehen
+- Implement access controls for Proprietary data on Sagehen HPC
 - Manage external sharing of Proprietary data securely
 ::::::::::::::::::::::::::::::::::::::::::::::::
 

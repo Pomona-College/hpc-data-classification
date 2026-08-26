@@ -27,7 +27,7 @@ The following learner profiles represent typical backgrounds, data contexts, and
 ### Specific Needs from Workshop
 
 - Clear understanding of FERPA requirements for her data
-- How to organize participant data safely on Sagehen
+- How to organize participant data safely on Sagehen HPC
 - Whether encryption is necessary for her study
 - How to share data with collaborators safely
 - What to do about that departed intern's access
@@ -70,7 +70,7 @@ The following learner profiles represent typical backgrounds, data contexts, and
 - Doesn't understand intellectual property and patents
 - All code currently on his laptop; no backup if it crashes
 - Collaborating with another student on code; unclear who owns what
-- Wants to transition code to Pomona's Sagehen cluster for larger experiments
+- Wants to transition code to Pomona's Sagehen HPC cluster for larger experiments
 
 ### Specific Needs from Workshop
 
