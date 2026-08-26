@@ -56,7 +56,7 @@ If you're new to Pomona's HPC cluster, please complete Workshops 01 and 02 first
 
 ### About This Workshop
 
-- **Duration:** 6 hours (typically delivered in 2 sessions)
+- **Duration:** about 7.5 hours (typically delivered in 2 sessions)
 - **Prerequisites:** HPC Cluster Basics (Workshop 1), Account Setup and Login (Workshop 2)
 - **Format:** Carpentries Workbench with hands-on exercises
 - **Instructor:** Andrew Wilson, Director of Research Computing, Pomona College ITS
