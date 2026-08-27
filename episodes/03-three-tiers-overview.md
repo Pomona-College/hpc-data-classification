@@ -20,6 +20,8 @@ exercises: 15
 
 Data classification at Pomona College follows a simple principle: **the more sensitive the data, the more security controls it requires**. The three tiers stack on top of each other; Restricted data includes all protections of Proprietary and Public.
 
+![Three tiers, and what each one obliges you to do.](fig/01-classification-tiers.png){alt='The three data tiers side by side. PUBLIC includes published papers, course materials, open-source code and open datasets, using chmod 755 or 750 with no encryption required. PROPRIETARY includes grant proposals, pre-publication data, trade secrets and personnel records, using chmod 750 or 600 with encryption recommended. RESTRICTED includes personal data under FERPA, health data under HIPAA, genetic data and government CUI, using chmod 700 plus gocryptfs with AES-256-GCM encryption required.'}
+
 ## Tier 1: PUBLIC
 
 **Definition:** Data that has been intentionally released for unrestricted use and is freely available to anyone, or data shared openly within Pomona College and authorized groups with no special risk of harm if accessed.
