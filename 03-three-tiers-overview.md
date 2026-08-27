@@ -20,6 +20,8 @@ exercises: 15
 
 Data classification at Pomona College follows a simple principle: **the more sensitive the data, the more security controls it requires**. The three tiers stack on top of each other; Restricted data includes all protections of Proprietary and Public.
 
+![Three tiers, and what each one obliges you to do.](fig/01-classification-tiers.png){alt='The three data tiers side by side. PUBLIC includes published papers, course materials, open-source code and open datasets, using chmod 755 or 750 with no encryption required. PROPRIETARY includes grant proposals, pre-publication data, trade secrets and personnel records, using chmod 750 or 600 with encryption recommended. RESTRICTED includes personal data under FERPA, health data under HIPAA, genetic data and government CUI, using chmod 700 plus gocryptfs with AES-256-GCM encryption required.'}
+
 ## Tier 1: PUBLIC
 
 **Definition:** Data that has been intentionally released for unrestricted use and is freely available to anyone, or data shared openly within Pomona College and authorized groups with no special risk of harm if accessed.
@@ -37,7 +39,7 @@ Data classification at Pomona College follows a simple principle: **the more sen
 |--------|---------|
 | **Encryption** | Not required |
 | **Access controls** | None required for public; group-readable (750) for internal shared data |
-| **Storage** | Anywhere on Sagehen (`/rhome` or `/bigdata`) |
+| **Storage** | Anywhere on Sagehen HPC (`/rhome` or `/bigdata`) |
 | **Sharing** | Unrestricted (public) or with lab members (shared within groups) |
 | **Retention** | No special policy |
 | **Audit logging** | Not required |
@@ -85,7 +87,7 @@ Even though Public data needs no special protection:
 | **Encryption** | Not required | Recommended | **REQUIRED** (AES-256-GCM) |
 | **Audit logging** | Not required | Optional | **REQUIRED** |
 
-![All three tiers demonstrated: directories and files created and chmod-ed per tier — 755/644 PUBLIC, 750/640 PROPRIETARY, 700/600 RESTRICTED (which additionally requires gocryptfs). Note Sagehen sets the setgid bit on new directories, so your `ls -l` will show an `s` where these examples show plain modes.](fig/03-three-tier-permissions-demo.jpg){alt='A terminal creating three directories and three CSV files, one per classification tier, and applying paired chmod commands: 755 and 644 for public, 750 and 640 for proprietary, 700 and 600 for restricted. The ls -l listing shows the resulting permission strings, with the directories carrying an inherited setgid bit.'}
+![All three tiers demonstrated: directories and files created and chmod-ed per tier — 755/644 PUBLIC, 750/640 PROPRIETARY, 700/600 RESTRICTED (which additionally requires gocryptfs). Note Sagehen HPC sets the setgid bit on new directories, so your `ls -l` will show an `s` where these examples show plain modes.](fig/03-three-tier-permissions-demo.jpg){alt='A terminal creating three directories and three CSV files, one per classification tier, and applying paired chmod commands: 755 and 644 for public, 750 and 640 for proprietary, 700 and 600 for restricted. The ls -l listing shows the resulting permission strings, with the directories carrying an inherited setgid bit.'}
 
 > **Permission variant on PROPRIETARY**: a `600` (user-only) variant may be appropriate
 > for sub-team-only or single-PI files within a PROPRIETARY workflow. It is a *variant*

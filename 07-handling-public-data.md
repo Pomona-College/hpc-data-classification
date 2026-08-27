@@ -7,7 +7,7 @@ exercises: 10
 ::::::::::::::::::::::::::::::::::::: objectives
 - Understand the specific handling requirements for PUBLIC data
 - Implement access controls appropriate to Public data
-- Set up storage for Public data on Sagehen
+- Set up storage for Public data on Sagehen HPC
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: questions

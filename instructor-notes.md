@@ -134,7 +134,7 @@ You should be familiar with:
    **PUBLIC (8-10 min)**
    - Definition: Either fully published/public OR freely shared within Pomona/lab groups
    - Examples: Published papers, open-source code, course materials, draft manuscripts shared with lab, lab meeting notes, internal protocols
-   - Storage: Anywhere (laptop, GitHub, cloud) if fully public; Sagehen for shared group data
+   - Storage: Anywhere (laptop, GitHub, cloud) if fully public; Sagehen HPC for shared group data
    - Encryption: Not required
    - Access: Unrestricted (fully public) or group-level access (750) if shared within group
    - Sharing: Freely for fully public; with group members if internal to group

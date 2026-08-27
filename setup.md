@@ -226,7 +226,7 @@ You'll leave with:
 - Clear understanding of where your data fits
 - Practical tools and techniques to protect it
 - Knowledge of when to ask for help
-- Confidence in Sagehen's security measures
+- Confidence in Sagehen HPC's security measures
 
 **No prior security expertise is required.** Come with curiosity and a willingness to think carefully about data protection.
 

@@ -60,6 +60,8 @@ START: New dataset or file
 │   NO → PUBLIC (freely available or shared openly within lab/groups)
 ```
 
+![Stop at the first question you answer yes to.](fig/02-classification-decision.png){alt='A decision tree. If the data is personal, health or genetic data about people, it is RESTRICTED. If it is covered by FERPA, HIPAA or export control, it is RESTRICTED. If it is unpublished, confidential or commercially sensitive, it is PROPRIETARY. Otherwise it is PUBLIC.'}
+
 ## Decision Documentation
 
 Once you've classified, **document your decision**. This serves two purposes:

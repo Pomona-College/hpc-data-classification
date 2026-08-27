@@ -32,6 +32,8 @@ Classifying data is not a one-time event; it's an ongoing process as your resear
 5. Monitor and re-classify as needed
 ```
 
+![The same four questions, answered differently for each tier.](fig/03-handling-matrix.png){alt='A table of handling requirements by tier. Permissions: 755 or 750 for PUBLIC, 750 or 600 for PROPRIETARY, 700 plus gocryptfs for RESTRICTED. Encryption: not required, recommended, and required with AES-256-GCM. Sharing: freely, case by case, and only under a legal agreement. Audit logging: no, no, and yes.'}
+
 ## Step 1: Inventory Your Data
 
 Before you can classify, you need to know what you have.

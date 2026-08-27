@@ -81,7 +81,7 @@ Beyond compliance:
 
 ### Scenario 1: The Published Paper Nobody Meant to Share
 
-Dr. Sarah's lab publishes a genomics study and deposits the processed dataset in a public repository (appropriately). But on Sagehen, the raw sequencing files (which can re-identify study participants) were stored in a standard `/bigdata` directory with permissive file permissions. A summer intern accidentally shared access to the entire directory with a collaborator. The raw data is now partially exposed.
+Dr. Sarah's lab publishes a genomics study and deposits the processed dataset in a public repository (appropriately). But on Sagehen HPC, the raw sequencing files (which can re-identify study participants) were stored in a standard `/bigdata` directory with permissive file permissions. A summer intern accidentally shared access to the entire directory with a collaborator. The raw data is now partially exposed.
 
 **Problem:** Raw data should have been classified as Restricted and encrypted.
 

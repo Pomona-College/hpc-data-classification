@@ -5,7 +5,7 @@ exercises: 20
 ---
 
 ::::::::::::::::::::::::::::::::::::: objectives
-- Understand Sagehen storage options (`/rhome` vs. `/bigdata`)
+- Understand Sagehen HPC storage options (`/rhome` vs. `/bigdata`)
 - Learn when and how to use gocryptfs for encrypting Restricted data
 - Implement encrypted containers for sensitive research data
 - Manage encrypted volumes: mounting, unmounting, backup
@@ -18,7 +18,7 @@ exercises: 20
 - How do I ensure encrypted data is backed up securely?
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Sagehen Storage Architecture
+## Sagehen HPC Storage Architecture
 
 ### Storage Options
 
