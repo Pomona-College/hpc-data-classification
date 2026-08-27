@@ -22,10 +22,9 @@ exercises: 15
 
 Research is collaborative. You need to share data with PhD students at other universities, industry partners, international collaborators, funding agencies, journal reviewers, and other research groups. But you also need to protect classified data. This episode shows how to do both safely.
 
-::::::::::::::::::::::::::::::::::::: callout
-
 ![Classify before you share, not after someone asks.](fig/04-sharing-workflow.png){alt='A flow beginning when someone asks for your data. Classify it first, then follow the tier: PUBLIC can be shared freely; PROPRIETARY needs PI approval and then a secure transfer; RESTRICTED needs IRB approval and a data use agreement, and may only travel over an encrypted channel. A warning says never to email RESTRICTED data or leave it in a shared folder to sort out later.'}
 
+::::::::::::::::::::::::::::::::::::: callout
 ## Quick Reference: What Can Be Shared?
 
 | Classification | Can Share? | Restrictions |
