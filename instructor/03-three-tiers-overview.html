@@ -365,7 +365,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>The Three Tiers Overview</h1>
-        <p>Last updated on 2026-08-24 |
+        <p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-data-classification/edit/main/episodes/03-three-tiers-overview.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -410,7 +410,9 @@ characteristics</li>
 <strong>the more sensitive the data, the more security controls it
 requires</strong>. The three tiers stack on top of each other;
 Restricted data includes all protections of Proprietary and Public.</p>
-</section><section><h2 class="section-heading" id="tier-1-public">Tier 1: PUBLIC<a class="anchor" aria-label="anchor" href="#tier-1-public"></a></h2>
+<figure><img src="../fig/01-classification-tiers.png" alt="The three data tiers side by side. PUBLIC includes published papers, course materials, open-source code and open datasets, using chmod 755 or 750 with no encryption required. PROPRIETARY includes grant proposals, pre-publication data, trade secrets and personnel records, using chmod 750 or 600 with encryption recommended. RESTRICTED includes personal data under FERPA, health data under HIPAA, genetic data and government CUI, using chmod 700 plus gocryptfs with AES-256-GCM encryption required." class="figure mx-auto d-block"><div class="figcaption">Three tiers, and what each one obliges you to
+do.</div>
+</figure></section><section><h2 class="section-heading" id="tier-1-public">Tier 1: PUBLIC<a class="anchor" aria-label="anchor" href="#tier-1-public"></a></h2>
 <hr class="half-width"><p><strong>Definition:</strong> Data that has been intentionally
 released for unrestricted use and is freely available to anyone, or data
 shared openly within Pomona College and authorized groups with no
@@ -441,7 +443,7 @@ sensitive data)</li>
 <td>None required for public; group-readable (750) for internal shared
 data</td>
 </tr><tr><td><strong>Storage</strong></td>
-<td>Anywhere on Sagehen (<code>/rhome</code> or
+<td>Anywhere on Sagehen HPC (<code>/rhome</code> or
 <code>/bigdata</code>)</td>
 </tr><tr><td><strong>Sharing</strong></td>
 <td>Unrestricted (public) or with lab members (shared within
@@ -523,7 +525,7 @@ collaboration terms for internally shared data</p>
 </tr></tbody></table><figure><img src="../fig/03-three-tier-permissions-demo.jpg" alt="A terminal creating three directories and three CSV files, one per classification tier, and applying paired chmod commands: 755 and 644 for public, 750 and 640 for proprietary, 700 and 600 for restricted. The ls -l listing shows the resulting permission strings, with the directories carrying an inherited setgid bit." class="figure mx-auto d-block"><div class="figcaption">All three tiers demonstrated: directories and
 files created and chmod-ed per tier — 755/644 PUBLIC, 750/640
 PROPRIETARY, 700/600 RESTRICTED (which additionally requires gocryptfs).
-Note Sagehen sets the setgid bit on new directories, so your
+Note Sagehen HPC sets the setgid bit on new directories, so your
 <code>ls -l</code> will show an <code>s</code> where these examples show
 plain modes.</div>
 </figure><blockquote>
@@ -575,7 +577,7 @@ geographic location)</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Student names + email + class schedule → <strong>RESTRICTED</strong>
 (FERPA-protected education record). Note: student names alone
@@ -672,8 +674,8 @@ protected</li>
   "url": "https://pomona-college.github.io/hpc-data-classification/instructor/03-three-tiers-overview.html",
   "identifier": "https://pomona-college.github.io/hpc-data-classification/instructor/03-three-tiers-overview.html",
   "dateCreated": "2026-03-05",
-  "dateModified": "2026-08-24",
-  "datePublished": "2026-08-26"
+  "dateModified": "2026-08-27",
+  "datePublished": "2026-08-27"
 }
 
   </script><script>

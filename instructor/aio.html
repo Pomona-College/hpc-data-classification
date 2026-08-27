@@ -426,7 +426,7 @@
         
 <section id="aio-01-why-classification-matters"><p>Content from <a href="01-why-classification-matters.html">Why Data Classification Matters</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-data-classification/edit/main/episodes/01-why-classification-matters.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 30 minutes</p>
@@ -555,11 +555,11 @@ covered if proper controls weren’t in place</li>
 <h3 id="scenario-1-the-published-paper-nobody-meant-to-share">Scenario 1: The Published Paper Nobody Meant to Share<a class="anchor" aria-label="anchor" href="#scenario-1-the-published-paper-nobody-meant-to-share"></a>
 </h3>
 <p>Dr. Sarah’s lab publishes a genomics study and deposits the processed
-dataset in a public repository (appropriately). But on Sagehen, the raw
-sequencing files (which can re-identify study participants) were stored
-in a standard <code>/bigdata</code> directory with permissive file
-permissions. A summer intern accidentally shared access to the entire
-directory with a collaborator. The raw data is now partially
+dataset in a public repository (appropriately). But on Sagehen HPC, the
+raw sequencing files (which can re-identify study participants) were
+stored in a standard <code>/bigdata</code> directory with permissive
+file permissions. A summer intern accidentally shared access to the
+entire directory with a collaborator. The raw data is now partially
 exposed.</p>
 <p><strong>Problem:</strong> Raw data should have been classified as
 Restricted and encrypted.</p>
@@ -696,7 +696,7 @@ damage</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Typical answer: <strong>$200–$500 per record</strong>. For 1,000
 records, that’s $200,000–$500,000 minimum — not including reputational
@@ -938,7 +938,7 @@ analyzes publicly available Census data</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ul>
 <li><ol style="list-style-type: decimal">
@@ -991,7 +991,7 @@ publishing</li>
 <!-- Useful links for Workshop 14: Data Classification and Handling -->
 </section></section><section id="aio-03-three-tiers-overview"><p>Content from <a href="03-three-tiers-overview.html">The Three Tiers Overview</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-data-classification/edit/main/episodes/03-three-tiers-overview.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 40 minutes</p>
@@ -1035,7 +1035,9 @@ characteristics</li>
 <strong>the more sensitive the data, the more security controls it
 requires</strong>. The three tiers stack on top of each other;
 Restricted data includes all protections of Proprietary and Public.</p>
-</section><section><h2 class="section-heading" id="tier-1-public">Tier 1: PUBLIC<a class="anchor" aria-label="anchor" href="#tier-1-public"></a>
+<figure><img src="../fig/01-classification-tiers.png" alt="The three data tiers side by side. PUBLIC includes published papers, course materials, open-source code and open datasets, using chmod 755 or 750 with no encryption required. PROPRIETARY includes grant proposals, pre-publication data, trade secrets and personnel records, using chmod 750 or 600 with encryption recommended. RESTRICTED includes personal data under FERPA, health data under HIPAA, genetic data and government CUI, using chmod 700 plus gocryptfs with AES-256-GCM encryption required." class="figure mx-auto d-block"><div class="figcaption">Three tiers, and what each one obliges you to
+do.</div>
+</figure></section><section><h2 class="section-heading" id="tier-1-public">Tier 1: PUBLIC<a class="anchor" aria-label="anchor" href="#tier-1-public"></a>
 </h2>
 <hr class="half-width">
 <p><strong>Definition:</strong> Data that has been intentionally
@@ -1085,7 +1087,7 @@ data</td>
 </tr>
 <tr>
 <td><strong>Storage</strong></td>
-<td>Anywhere on Sagehen (<code>/rhome</code> or
+<td>Anywhere on Sagehen HPC (<code>/rhome</code> or
 <code>/bigdata</code>)</td>
 </tr>
 <tr>
@@ -1203,7 +1205,7 @@ collaboration terms for internally shared data</p>
 <figure><img src="../fig/03-three-tier-permissions-demo.jpg" alt="A terminal creating three directories and three CSV files, one per classification tier, and applying paired chmod commands: 755 and 644 for public, 750 and 640 for proprietary, 700 and 600 for restricted. The ls -l listing shows the resulting permission strings, with the directories carrying an inherited setgid bit." class="figure mx-auto d-block"><div class="figcaption">All three tiers demonstrated: directories and
 files created and chmod-ed per tier — 755/644 PUBLIC, 750/640
 PROPRIETARY, 700/600 RESTRICTED (which additionally requires gocryptfs).
-Note Sagehen sets the setgid bit on new directories, so your
+Note Sagehen HPC sets the setgid bit on new directories, so your
 <code>ls -l</code> will show an <code>s</code> where these examples show
 plain modes.</div>
 </figure><blockquote>
@@ -1255,7 +1257,7 @@ geographic location)</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Student names + email + class schedule → <strong>RESTRICTED</strong>
@@ -1616,7 +1618,7 @@ all data</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>fMRI scans without names → <strong>Proprietary</strong> (valuable
@@ -1655,7 +1657,7 @@ variant for sub-team-only files), RESTRICTED=700+gocryptfs</li>
 </div>
 </section></section><section id="aio-05-classification-process"><p>Content from <a href="05-classification-process.html">The Classification Process</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-data-classification/edit/main/episodes/05-classification-process.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 40 minutes</p>
@@ -1706,7 +1708,9 @@ your research evolves. Here’s the workflow:</p>
 4. Implement handling requirements
          ↓
 5. Monitor and re-classify as needed</code></pre>
-</section><section><h2 class="section-heading" id="step-1-inventory-your-data">Step 1: Inventory Your Data<a class="anchor" aria-label="anchor" href="#step-1-inventory-your-data"></a>
+<figure><img src="../fig/03-handling-matrix.png" alt="A table of handling requirements by tier. Permissions: 755 or 750 for PUBLIC, 750 or 600 for PROPRIETARY, 700 plus gocryptfs for RESTRICTED. Encryption: not required, recommended, and required with AES-256-GCM. Sharing: freely, case by case, and only under a legal agreement. Audit logging: no, no, and yes." class="figure mx-auto d-block"><div class="figcaption">The same four questions, answered differently
+for each tier.</div>
+</figure></section><section><h2 class="section-heading" id="step-1-inventory-your-data">Step 1: Inventory Your Data<a class="anchor" aria-label="anchor" href="#step-1-inventory-your-data"></a>
 </h2>
 <hr class="half-width">
 <p>Before you can classify, you need to know what you have.</p>
@@ -1969,7 +1973,7 @@ evolves</li>
 </div>
 </section></section><section id="aio-06-decision-framework"><p>Content from <a href="06-decision-framework.html">Decision Framework</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-data-classification/edit/main/episodes/06-decision-framework.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 40 minutes</p>
@@ -2046,7 +2050,9 @@ evolves</li>
 │   (only certain people can access, not the entire group)
 │   YES → PROPRIETARY
 │   NO → PUBLIC (freely available or shared openly within lab/groups)</code></pre>
-</section><section><h2 class="section-heading" id="decision-documentation">Decision Documentation<a class="anchor" aria-label="anchor" href="#decision-documentation"></a>
+<figure><img src="../fig/02-classification-decision.png" alt="A decision tree. If the data is personal, health or genetic data about people, it is RESTRICTED. If it is covered by FERPA, HIPAA or export control, it is RESTRICTED. If it is unpublished, confidential or commercially sensitive, it is PROPRIETARY. Otherwise it is PUBLIC." class="figure mx-auto d-block"><div class="figcaption">Stop at the first question you answer yes
+to.</div>
+</figure></section><section><h2 class="section-heading" id="decision-documentation">Decision Documentation<a class="anchor" aria-label="anchor" href="#decision-documentation"></a>
 </h2>
 <hr class="half-width">
 <p>Once you’ve classified, <strong>document your decision</strong>. This
@@ -2173,7 +2179,7 @@ apply?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>
@@ -2217,7 +2223,7 @@ recommend?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p><strong>Classification:</strong> <strong>Restricted</strong> (health
 information + potential re-identification from image metadata +
@@ -2262,7 +2268,7 @@ handling</li>
 </div>
 </section></section><section id="aio-07-handling-public-data"><p>Content from <a href="07-handling-public-data.html">Handling PUBLIC Data</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-data-classification/edit/main/episodes/07-handling-public-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 25 minutes</p>
@@ -2291,7 +2297,7 @@ handling</li>
 <ul>
 <li>Understand the specific handling requirements for PUBLIC data</li>
 <li>Implement access controls appropriate to Public data</li>
-<li>Set up storage for Public data on Sagehen</li>
+<li>Set up storage for Public data on Sagehen HPC</li>
 </ul>
 </div>
 </div>
@@ -2434,7 +2440,7 @@ encryption is needed</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Published data → <code>/bigdata</code> (large dataset) → permissions
@@ -2468,7 +2474,7 @@ sharing</li>
 <!-- highlight <labname>/<myusername> placeholders in code blocks; remove if the varnish theme handles this natively -->
 <script>(function(){var CSS='.sh-placeholder{color:#c2410c;font-weight:700}[data-bs-theme="dark"] .sh-placeholder,html.dark .sh-placeholder{color:#fdba74}@media (prefers-color-scheme: dark){[data-bs-theme="auto"] .sh-placeholder{color:#fdba74}}';var RX=/<labname>|<myusername>/g;function firstMatch(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),nodes=[],full='';while(w.nextNode()){nodes.push({n:w.currentNode,s:full.length});full+=w.currentNode.nodeValue;}RX.lastIndex=0;var m;while((m=RX.exec(full))){var s=m.index,e=s+m[0].length,inSpan=false,parts=[];for(var j=0;j<nodes.length;j++){var ns=nodes[j].s,ne=ns+nodes[j].n.nodeValue.length;if(ne<=s||ns>=e)continue;parts.push({node:nodes[j].n,a:Math.max(s-ns,0),b:Math.min(e-ns,nodes[j].n.nodeValue.length)});var p=nodes[j].n.parentNode;while(p&&p!==el){if(p.classList&&p.classList.contains('sh-placeholder')){inSpan=true;break;}p=p.parentNode;}}if(!inSpan&&parts.length)return parts;}return null;}function wrapParts(parts){for(var i=parts.length-1;i>=0;i--){var t=parts[i].node,txt=t.nodeValue,a=parts[i].a,b=parts[i].b;var span=document.createElement('span');span.className='sh-placeholder';span.textContent=txt.slice(a,b);var f=document.createDocumentFragment();if(a>0)f.appendChild(document.createTextNode(txt.slice(0,a)));f.appendChild(span);if(b<txt.length)f.appendChild(document.createTextNode(txt.slice(b)));t.parentNode.replaceChild(f,t);}}function run(){var st=document.createElement('style');st.textContent=CSS;document.head.appendChild(st);document.querySelectorAll('pre,code').forEach(function(el){var guard=0,parts;while((parts=firstMatch(el))&&guard++<500){wrapParts(parts);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script><!-- Useful links for Workshop 14: Data Classification and Handling --></section></section><section id="aio-08-handling-proprietary-data"><p>Content from <a href="08-handling-proprietary-data.html">Handling PROPRIETARY Data</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-data-classification/edit/main/episodes/08-handling-proprietary-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 35 minutes</p>
@@ -2498,7 +2504,7 @@ Restricted?</li>
 <ul>
 <li>Understand the specific handling requirements for PROPRIETARY
 data</li>
-<li>Implement access controls for Proprietary data on Sagehen</li>
+<li>Implement access controls for Proprietary data on Sagehen HPC</li>
 <li>Manage external sharing of Proprietary data securely</li>
 </ul>
 </div>
@@ -2660,7 +2666,7 @@ commands)</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p><strong>Grant proposal (PI-only):</strong> - Permissions: 600 (owner
 only) - Who can access: PI only - Enforcement:
@@ -3013,7 +3019,7 @@ institutional channels</li>
 </div>
 </section></section><section id="aio-10-storage-encryption"><p>Content from <a href="10-storage-encryption.html">Storage and Encryption</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-data-classification/edit/main/episodes/10-storage-encryption.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 50 minutes</p>
@@ -3041,7 +3047,7 @@ institutional channels</li>
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Understand Sagehen storage options (<code>/rhome</code>
+<li>Understand Sagehen HPC storage options (<code>/rhome</code>
 vs. <code>/bigdata</code>)</li>
 <li>Learn when and how to use gocryptfs for encrypting Restricted
 data</li>
@@ -3053,7 +3059,7 @@ data</li>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="sagehen-storage-architecture">Sagehen Storage Architecture<a class="anchor" aria-label="anchor" href="#sagehen-storage-architecture"></a>
+<section><h2 class="section-heading" id="sagehen-hpc-storage-architecture">Sagehen HPC Storage Architecture<a class="anchor" aria-label="anchor" href="#sagehen-hpc-storage-architecture"></a>
 </h2>
 <hr class="half-width">
 <div class="section level3">
@@ -3222,7 +3228,7 @@ Container</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p><strong>Step 1 – Create directories:</strong></p>
 <div class="codewrapper sourceCode" id="cb7">
@@ -3313,7 +3319,7 @@ never share</li>
 <!-- highlight <labname>/<myusername> placeholders in code blocks; remove if the varnish theme handles this natively -->
 <script>(function(){var CSS='.sh-placeholder{color:#c2410c;font-weight:700}[data-bs-theme="dark"] .sh-placeholder,html.dark .sh-placeholder{color:#fdba74}@media (prefers-color-scheme: dark){[data-bs-theme="auto"] .sh-placeholder{color:#fdba74}}';var RX=/<labname>|<myusername>/g;function firstMatch(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),nodes=[],full='';while(w.nextNode()){nodes.push({n:w.currentNode,s:full.length});full+=w.currentNode.nodeValue;}RX.lastIndex=0;var m;while((m=RX.exec(full))){var s=m.index,e=s+m[0].length,inSpan=false,parts=[];for(var j=0;j<nodes.length;j++){var ns=nodes[j].s,ne=ns+nodes[j].n.nodeValue.length;if(ne<=s||ns>=e)continue;parts.push({node:nodes[j].n,a:Math.max(s-ns,0),b:Math.min(e-ns,nodes[j].n.nodeValue.length)});var p=nodes[j].n.parentNode;while(p&&p!==el){if(p.classList&&p.classList.contains('sh-placeholder')){inSpan=true;break;}p=p.parentNode;}}if(!inSpan&&parts.length)return parts;}return null;}function wrapParts(parts){for(var i=parts.length-1;i>=0;i--){var t=parts[i].node,txt=t.nodeValue,a=parts[i].a,b=parts[i].b;var span=document.createElement('span');span.className='sh-placeholder';span.textContent=txt.slice(a,b);var f=document.createDocumentFragment();if(a>0)f.appendChild(document.createTextNode(txt.slice(0,a)));f.appendChild(span);if(b<txt.length)f.appendChild(document.createTextNode(txt.slice(b)));t.parentNode.replaceChild(f,t);}}function run(){var st=document.createElement('style');st.textContent=CSS;document.head.appendChild(st);document.querySelectorAll('pre,code').forEach(function(el){var guard=0,parts;while((parts=firstMatch(el))&&guard++<500){wrapParts(parts);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script><!-- Useful links for Workshop 14: Data Classification and Handling --></section></section><section id="aio-11-sharing-collaboration"><p>Content from <a href="11-sharing-collaboration.html">Sharing and Collaboration</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-data-classification/edit/main/episodes/11-sharing-collaboration.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 40 minutes</p>
@@ -3360,7 +3366,9 @@ at other universities, industry partners, international collaborators,
 funding agencies, journal reviewers, and other research groups. But you
 also need to protect classified data. This episode shows how to do both
 safely.</p>
-<div id="quick-reference-what-can-be-shared" class="callout">
+<figure><img src="../fig/04-sharing-workflow.png" alt="A flow beginning when someone asks for your data. Classify it first, then follow the tier: PUBLIC can be shared freely; PROPRIETARY needs PI approval and then a secure transfer; RESTRICTED needs IRB approval and a data use agreement, and may only travel over an encrypted channel. A warning says never to email RESTRICTED data or leave it in a shared folder to sort out later." class="figure mx-auto d-block"><div class="figcaption">Classify before you share, not after someone
+asks.</div>
+</figure><div id="quick-reference-what-can-be-shared" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -3410,8 +3418,8 @@ export-controlled) cannot be shared in its original form.</p>
 <span id="cb1-4"><a href="#cb1-4" tabindex="-1" aria-label="code-block-1-4"></a><span class="co"># Include in paper supplementary materials</span></span></code></pre>
 </div>
 <p><strong>Sharing methods for data shared within groups:</strong> 1.
-Sagehen direct access (collaborators get accounts) 2. Pomona-managed Box
-or OneDrive 3. Secure SFTP transfer via ITS 4. GitHub or public
+Sagehen HPC direct access (collaborators get accounts) 2. Pomona-managed
+Box or OneDrive 3. Secure SFTP transfer via ITS 4. GitHub or public
 repository (if fully public)</p>
 </section><section><h2 class="section-heading" id="sharing-proprietary-data">Sharing Proprietary Data<a class="anchor" aria-label="anchor" href="#sharing-proprietary-data"></a>
 </h2>
@@ -3634,7 +3642,7 @@ international sharing</li>
 </div>
 </section></section><section id="aio-12-deidentification-best-practices"><p>Content from <a href="12-deidentification-best-practices.html">De-identification and Best Practices</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-data-classification/edit/main/episodes/12-deidentification-best-practices.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 40 minutes</p>
@@ -3854,8 +3862,9 @@ Encryption / Storage:</strong> <a href="mailto:its-hpc@pomona.edu" class="email"
 <hr class="half-width">
 <p><strong>Pomona Documents:</strong> - <a href="https://www.pomona.edu/its/" class="external-link">Pomona Information Security
 Policy</a> - <a href="https://pomona-college.github.io/usage-policy" class="external-link">HPC
-Usage Policy</a> - <a href="https://pomona-college.github.io/sagehen" class="external-link">Sagehen User Guide</a> -
-<a href="https://www.pomona.edu/its/" class="external-link">Data Classification Guide</a></p>
+Usage Policy</a> - <a href="https://pomona-college.github.io/sagehen" class="external-link">Sagehen HPC User
+Guide</a> - <a href="https://www.pomona.edu/its/" class="external-link">Data Classification
+Guide</a></p>
 <p><strong>External Standards:</strong> - <a href="https://csrc.nist.gov/publications/detail/sp/800-171/rev-2" class="external-link">NIST
 SP 800-171</a> . Safeguarding CUI - <a href="https://www2.ed.gov/policy/gen/guid/fpco/ferpa/" class="external-link">FERPA
 Overview</a> . Student Privacy Law - <a href="https://www.bis.doc.gov/index.php/regulations/export-administration-regulations-ear" class="external-link">EAR</a>
@@ -3979,8 +3988,8 @@ and Pomona College</li>
   "url": "https://pomona-college.github.io/hpc-data-classification/instructor/aio.html",
   "identifier": "https://pomona-college.github.io/hpc-data-classification/instructor/aio.html",
   "dateCreated": "2026-03-05",
-  "dateModified": "2026-08-26",
-  "datePublished": "2026-08-26"
+  "dateModified": "2026-08-27",
+  "datePublished": "2026-08-27"
 }
 
   </script><script>

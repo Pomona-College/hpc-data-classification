@@ -427,22 +427,42 @@
 <hr class="half-width"></section><section id="03-three-tiers-overview"><h2 class="section-heading"><a href="03-three-tiers-overview.html">The Three Tiers Overview</a></h2>
 <hr class="half-width">
 <h3 id="03-three-tiers-overview-figure-1">Figure 1</h3>
+<p aria-hidden="true">Image 1 of 1: ‘The three data tiers side by side. PUBLIC includes published papers, course materials, open-source code and open datasets, using chmod 755 or 750 with no encryption required. PROPRIETARY includes grant proposals, pre-publication data, trade secrets and personnel records, using chmod 750 or 600 with encryption recommended. RESTRICTED includes personal data under FERPA, health data under HIPAA, genetic data and government CUI, using chmod 700 plus gocryptfs with AES-256-GCM encryption required.’</p>
+<figure><img src="fig/01-classification-tiers.png" alt="The three data tiers side by side. PUBLIC includes published papers, course materials, open-source code and open datasets, using chmod 755 or 750 with no encryption required. PROPRIETARY includes grant proposals, pre-publication data, trade secrets and personnel records, using chmod 750 or 600 with encryption recommended. RESTRICTED includes personal data under FERPA, health data under HIPAA, genetic data and government CUI, using chmod 700 plus gocryptfs with AES-256-GCM encryption required." class="figure mx-auto d-block"><div class="figcaption">Three tiers, and what each one obliges you to
+do.</div>
+</figure><hr>
+<h3 id="03-three-tiers-overview-figure-2">Figure 2</h3>
 <p aria-hidden="true">Image 1 of 1: ‘A terminal creating three directories and three CSV files, one per classification tier, and applying paired chmod commands: 755 and 644 for public, 750 and 640 for proprietary, 700 and 600 for restricted. The ls -l listing shows the resulting permission strings, with the directories carrying an inherited setgid bit.’</p>
 <figure><img src="fig/03-three-tier-permissions-demo.jpg" alt="A terminal creating three directories and three CSV files, one per classification tier, and applying paired chmod commands: 755 and 644 for public, 750 and 640 for proprietary, 700 and 600 for restricted. The ls -l listing shows the resulting permission strings, with the directories carrying an inherited setgid bit." class="figure mx-auto d-block"><div class="figcaption">All three tiers demonstrated: directories and
 files created and chmod-ed per tier — 755/644 PUBLIC, 750/640
 PROPRIETARY, 700/600 RESTRICTED (which additionally requires gocryptfs).
-Note Sagehen sets the setgid bit on new directories, so your
+Note Sagehen HPC sets the setgid bit on new directories, so your
 <code>ls -l</code> will show an <code>s</code> where these examples show
 plain modes.</div>
 </figure><hr></section><section id="04-identifying-data-types"><h2 class="section-heading"><a href="04-identifying-data-types.html">Identifying Data Types</a></h2>
 <hr class="half-width"></section><section id="05-classification-process"><h2 class="section-heading"><a href="05-classification-process.html">The Classification Process</a></h2>
-<hr class="half-width"></section><section id="06-decision-framework"><h2 class="section-heading"><a href="06-decision-framework.html">Decision Framework</a></h2>
-<hr class="half-width"></section><section id="07-handling-public-data"><h2 class="section-heading"><a href="07-handling-public-data.html">Handling PUBLIC Data</a></h2>
+<hr class="half-width">
+<h3 id="05-classification-process-figure-1">Figure 1</h3>
+<p aria-hidden="true">Image 1 of 1: ‘A table of handling requirements by tier. Permissions: 755 or 750 for PUBLIC, 750 or 600 for PROPRIETARY, 700 plus gocryptfs for RESTRICTED. Encryption: not required, recommended, and required with AES-256-GCM. Sharing: freely, case by case, and only under a legal agreement. Audit logging: no, no, and yes.’</p>
+<figure><img src="fig/03-handling-matrix.png" alt="A table of handling requirements by tier. Permissions: 755 or 750 for PUBLIC, 750 or 600 for PROPRIETARY, 700 plus gocryptfs for RESTRICTED. Encryption: not required, recommended, and required with AES-256-GCM. Sharing: freely, case by case, and only under a legal agreement. Audit logging: no, no, and yes." class="figure mx-auto d-block"><div class="figcaption">The same four questions, answered differently
+for each tier.</div>
+</figure><hr></section><section id="06-decision-framework"><h2 class="section-heading"><a href="06-decision-framework.html">Decision Framework</a></h2>
+<hr class="half-width">
+<h3 id="06-decision-framework-figure-1">Figure 1</h3>
+<p aria-hidden="true">Image 1 of 1: ‘A decision tree. If the data is personal, health or genetic data about people, it is RESTRICTED. If it is covered by FERPA, HIPAA or export control, it is RESTRICTED. If it is unpublished, confidential or commercially sensitive, it is PROPRIETARY. Otherwise it is PUBLIC.’</p>
+<figure><img src="fig/02-classification-decision.png" alt="A decision tree. If the data is personal, health or genetic data about people, it is RESTRICTED. If it is covered by FERPA, HIPAA or export control, it is RESTRICTED. If it is unpublished, confidential or commercially sensitive, it is PROPRIETARY. Otherwise it is PUBLIC." class="figure mx-auto d-block"><div class="figcaption">Stop at the first question you answer yes
+to.</div>
+</figure><hr></section><section id="07-handling-public-data"><h2 class="section-heading"><a href="07-handling-public-data.html">Handling PUBLIC Data</a></h2>
 <hr class="half-width"></section><section id="08-handling-proprietary-data"><h2 class="section-heading"><a href="08-handling-proprietary-data.html">Handling PROPRIETARY Data</a></h2>
 <hr class="half-width"></section><section id="09-handling-restricted-data"><h2 class="section-heading"><a href="09-handling-restricted-data.html">Handling RESTRICTED Data</a></h2>
 <hr class="half-width"></section><section id="10-storage-encryption"><h2 class="section-heading"><a href="10-storage-encryption.html">Storage and Encryption</a></h2>
 <hr class="half-width"></section><section id="11-sharing-collaboration"><h2 class="section-heading"><a href="11-sharing-collaboration.html">Sharing and Collaboration</a></h2>
-<hr class="half-width"></section><section id="12-deidentification-best-practices"><h2 class="section-heading"><a href="12-deidentification-best-practices.html">De-identification and Best Practices</a></h2>
+<hr class="half-width">
+<h3 id="11-sharing-collaboration-figure-1">Figure 1</h3>
+<p aria-hidden="true">Image 1 of 1: ‘A flow beginning when someone asks for your data. Classify it first, then follow the tier: PUBLIC can be shared freely; PROPRIETARY needs PI approval and then a secure transfer; RESTRICTED needs IRB approval and a data use agreement, and may only travel over an encrypted channel. A warning says never to email RESTRICTED data or leave it in a shared folder to sort out later.’</p>
+<figure><img src="fig/04-sharing-workflow.png" alt="A flow beginning when someone asks for your data. Classify it first, then follow the tier: PUBLIC can be shared freely; PROPRIETARY needs PI approval and then a secure transfer; RESTRICTED needs IRB approval and a data use agreement, and may only travel over an encrypted channel. A warning says never to email RESTRICTED data or leave it in a shared folder to sort out later." class="figure mx-auto d-block"><div class="figcaption">Classify before you share, not after someone
+asks.</div>
+</figure><hr></section><section id="12-deidentification-best-practices"><h2 class="section-heading"><a href="12-deidentification-best-practices.html">De-identification and Best Practices</a></h2>
 <hr class="half-width"></section>
 </div>
     </main>
@@ -493,8 +513,8 @@ plain modes.</div>
   "url": "https://pomona-college.github.io/hpc-data-classification/images.html",
   "identifier": "https://pomona-college.github.io/hpc-data-classification/images.html",
   "dateCreated": "2026-03-05",
-  "dateModified": "2026-08-26",
-  "datePublished": "2026-08-26"
+  "dateModified": "2026-08-27",
+  "datePublished": "2026-08-27"
 }
 
   </script><script>
